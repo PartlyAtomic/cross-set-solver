@@ -20,7 +20,7 @@ if __name__ == '__main__':
     # Stuff the contents into puzzle (list of list of sets) with minimal validation
     puzzle = []
     # Each line: Add a list to puzzle
-    for line in puzzle_contents.split('\n'):
+    for line in puzzle_contents.strip().split('\n'):
         puzzle_line = []
         # Each cell: Add a set to puzzle_line
         for cell in line.split(' '):
